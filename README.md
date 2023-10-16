@@ -29,7 +29,7 @@ The program is written to be run in the command prompt. If you are comfortable w
 
 To run it, download the main-scoot.py file and place it in a folder. The folder should contain main-scoot.py and a different folder of scooter heic images. It doesn't matter what the folder is -- it could just be your downloads folder. Just make sure the main-scoot.py and your image folder are in the same larger folder. In my case the folder was titled scooter_project.  
 
-enter this command in your command prompt to go to said folder. Obviously replace the path with your folder path:
+enter this command in your command prompt to go to said folder. Obviously replace the path with your folder path:  
 cd C:\Users\cisco\scooter_project  
 
 then enter this command to run the program. Again, replace the path to the image folder with your machines path:

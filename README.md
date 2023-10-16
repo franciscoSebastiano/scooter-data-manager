@@ -1,5 +1,5 @@
 # scooter-data-manager
-This repo is for a school group project -- Research Thinking 2023, Fall, Group 4
+This repo is for a school group project -- Research Thinking 2023, Fall, Group 4.
 The entire project is in the main-scoot.py file.  
 
 To make it easier for everyone to run the data manager, I didn't seperate the classes and defs into different functions.

@@ -74,6 +74,9 @@ def get_specific_exif_data(file_path):
     
     # Running the ExifTool command (will not work if exiftool is not in your C:\programtools directory)
     result = subprocess.run(['exiftool', '-j', *tags, file_path], capture_output=True, text=True)
+    print(f"Reading EXIF data from: {file_path}")
+    print("here")
+    print(result.stdout)
     
     # Parse the JSON output
     data = json.loads(result.stdout)[0]  # Assuming one file, so take the first item in the list
@@ -107,7 +110,8 @@ def heic_to_jpg_folder(folder_path): #create folder of jpg images from folder of
     register_heif_opener()
 
     for image in image_list:
-        photo = img.open(image)
+        full_path = os.path.join(folder_path, image)
+        photo = img.open(full_path)
 
         output_folder = 'jpeg_images'
         output_filename = image.replace('.HEIC', '.jpg')
@@ -142,7 +146,7 @@ def get_folder_data(imageDirectory): #get exifdata from every image in folder & 
         output_filename = image.replace('.HEIC', '.jpg')
         output_path = f"{output_folder}/{output_filename}" 
 
-        heic_path = image
+        heic_path = full_path = os.path.join(imageDirectory, image)
         metadata = get_specific_exif_data(heic_path) #get quantitative metadata information
         checkbox_states = get_checkbox_states(output_path) #prompt user to input qualitative image information
 
@@ -177,7 +181,7 @@ def create_csv(latitude_dd, longitude_dd, time_list, no_kickstand, blocked_walkw
         # write the rows
         writer.writerows(rows)
 
-input_folder_path = "scooter_folder"
+input_folder_path =  "C:\\Users\\cisco\\ti\\titled_scoot3"
 
 heic_to_jpg_folder(input_folder_path) #call function to convert heic images to jpg
 

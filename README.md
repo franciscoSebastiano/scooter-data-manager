@@ -20,7 +20,7 @@ program outputs -- csv file 'output.csv' with image data, plot of coordinate loc
 
 # IDE usage
 
-Go to line 180 of main-scoot-ide.py and define the folder path as the path to your folder of heic scooter images. Run the program and it should work. 
+Go to line 184 of main-scoot-ide.py and define the folder path as the path to your folder of heic scooter images. Input the full path, not just the relative path. Run the program and it should work. 
 
 
 # command prompt usage

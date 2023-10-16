@@ -14,6 +14,13 @@ matplotlib - pip install matplotlib
 
 All of the other libraries are pre-installed with python
 
+# Usage
+Program inputs -- folder of heic images with location and date/time meta data preserved from each image.  
+program outputs -- csv file 'output.csv' with image data, plot of coordinate locations from image metadata, folder 'jpeg_images' with heic images converted to jpeg  
+
+To use the program you must define the correct path for your folder of images. Go to line 182 of main-scoot.py and you can define your folder path. 
+
+
 # Trouble Shooting Exiftool
 If the program returns an error when trying to use the exiftool, you likely do not have exiftool installed. 
 exiftool is a windows program that gets exif data from images. It is not a python specific tool.

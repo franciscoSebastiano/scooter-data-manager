@@ -179,10 +179,11 @@ def create_csv(latitude_dd, longitude_dd, time_list, no_kickstand, blocked_walkw
         # write the rows
         writer.writerows(rows)
 
+input_folder_path = "scooter_folder"
 
-heic_to_jpg_folder('imagesdirec') #call function to convert heic images to jpg
+heic_to_jpg_folder(input_folder_path) #call function to convert heic images to jpg
 
-folder_data = get_folder_data('imagesdirec') #get data from each image in heic folder
+folder_data = get_folder_data(input_folder_path) #get data from each image in heic folder
 print(folder_data[5])
 
 create_csv(folder_data[0], folder_data[1], folder_data[2], folder_data[3], folder_data[4], folder_data[5], folder_data[6]) # create csv with image data

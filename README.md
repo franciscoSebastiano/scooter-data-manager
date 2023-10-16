@@ -1,7 +1,8 @@
 # scooter-data-manager
 This repo is for a school group project -- Research Thinking 2023, Fall, Group 4
 
-Dependecies:      pip commands:
+Dependecies:      pip commands:  
+
 Pillow library ~ pip install pillow  
 
 Pillow_heif ~ pip install pillow-heif  

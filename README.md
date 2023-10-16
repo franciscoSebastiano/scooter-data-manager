@@ -1,6 +1,6 @@
 # scooter-data-manager
 This repo is for a school group project -- Research Thinking 2023, Fall, Group 4.
-The entire project is in the main-scoot.py file.  
+The entire project is in the main-scoot.py file. 
 
 To make it easier for everyone to run the data manager, I didn't seperate the classes and defs into different functions.
 
@@ -14,12 +14,28 @@ matplotlib - pip install matplotlib
 
 All of the other libraries are pre-installed with python
 
-# Usage
+# inputs/outputs
 Program inputs -- folder of heic images with location and date/time meta data preserved from each image.  
-program outputs -- csv file 'output.csv' with image data, plot of coordinate locations from image metadata, folder 'jpeg_images' with heic images converted to jpeg  
+program outputs -- csv file 'output.csv' with image data, plot of coordinate locations from image metadata, folder 'jpeg_images' with heic images converted to jpeg
 
-To use the program you must define the correct path for your folder of images. The default folder path defined in the program is 'scooter_folder', so you can name your folder of images 'scooter_folder' and put said folder in a folder with main-scoot.py. The program will work if you do this.
-You can also change the folder path inside the program by going to line 182 of main-scoot.py and chaning the definition to whatever folder path you want.
+# IDE usage
+
+Go to line 182 of main-scoot-ide.py and define the folder path as the path to your folder of heic scooter images. Run the program and it should work. 
+
+
+# command prompt usage
+
+The program is written to be run in the command prompt. If you are comfortable with and have an IDE, use that, but this will also work if you don't already have an IDE.  
+
+To run it, download the main-scoot.py file and place it in a folder. The folder should contain main-scoot.py and a different folder of scooter heic images. It doesn't matter what the folder is -- it could just be your downloads folder. Just make sure the main-scoot.py and your image folder are in the same larger folder. In my case the folder was titled scooter_project.  
+
+enter this command in your command prompt to go to said folder. Obviously replace the path with your folder path:
+cd C:\Users\cisco\scooter_project  
+
+then enter this command to run the program. Again, replace the path to the image folder with your machines path:
+python main-scoot.py C:\Users\cisco\scooter_folder\scooter_heic_images
+
+the program will now run.
 
 # Trouble Shooting Exiftool
 If the program returns an error when trying to use the exiftool, you likely do not have exiftool installed. 

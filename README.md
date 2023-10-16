@@ -32,7 +32,7 @@ To run it, download the main-scoot.py file and place it in a folder. The folder 
 enter this command in your command prompt to go to said folder. Obviously replace the path with your folder path:  
 cd C:\Users\cisco\scooter_project  
 
-then enter this command to run the program. Again, replace the path to the image folder with your machines path:
+then enter this command to run the program. Again, replace the path to the image folder with your machine's path:
 python main-scoot.py C:\Users\cisco\scooter_folder\scooter_heic_images
 
 the program will now run.

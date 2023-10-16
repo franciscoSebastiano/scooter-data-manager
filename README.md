@@ -25,7 +25,7 @@ Go to line 180 of main-scoot-ide.py and define the folder path as the path to yo
 
 # command prompt usage
 
-The program is written to be run in the command prompt. If you are comfortable with and have an IDE, use that, but this will also work if you don't already have an IDE.  
+You can also run the program trhough the command prompt. If you are comfortable with and have an IDE, use that, but this will also work if you don't already have an IDE.  
 
 To run it, download the main-scoot.py file and place it in a folder. The folder should contain main-scoot.py and a different folder of scooter heic images. It doesn't matter what the folder is -- it could just be your downloads folder. Just make sure the main-scoot.py and your image folder are in the same larger folder. In my case the folder was titled scooter_project.  
 

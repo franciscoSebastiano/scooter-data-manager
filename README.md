@@ -2,9 +2,12 @@
 This repo is for a school group project -- Research Thinking 2023, Fall, Group 4
 
 Dependecies:      pip commands:
-Pillow library ~ pip install pillow
-Pillow_heif ~ pip install pillow-heif
-matplotlib - pip install matplotlib
+Pillow library ~ pip install pillow  
+
+Pillow_heif ~ pip install pillow-heif  
+
+matplotlib - pip install matplotlib  
+
 All of the other libraries are pre-installed with python
 
 # Trouble Shooting Exiftool
